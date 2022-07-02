@@ -1,0 +1,27 @@
+package com.greatlearning.Model;
+
+import java.util.Scanner;
+
+public class SuperDepartment {
+	Scanner in = new Scanner(System.in);
+	String departmentName;
+	String todaysWork;
+	String workDeadline;
+	String todayAHoliday;
+	public String departmentName() {
+		System.out.println("Enter Department Name");
+		departmentName = in.nextLine();
+		return(departmentName);
+	}
+	public String getTodaysWork() {
+		System.out.println("Enter Work Detail");
+		todaysWork = in.nextLine();
+		return(todaysWork);
+	}
+	public String getWorkDeadline() {
+		return("Complete by EOD");
+	}
+	public String isTodayAHoliday() {
+		return("Today is not a Holiday");
+	}
+}
