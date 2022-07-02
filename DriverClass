@@ -1,0 +1,22 @@
+package com.greatlearning.main;
+import com.greatlearning.Model.AdminDepartment;
+import com.greatlearning.Model.TechDepartment;
+import com.greatlearning.Model.HrDepartment;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		AdminDepartment ad = new AdminDepartment();
+		TechDepartment td = new TechDepartment();
+		HrDepartment hr = new HrDepartment();
+		String Name = ad.departmentName();
+		String Work = ad.getTodaysWork();
+		String Name1 = hr.departmentName();
+		String Work1 = hr.getTodaysWork();
+		String Name2 = td.departmentName();
+		String Work2 = td.getTodaysWork();
+		System.out.print("\n"+"Welcome to "+Name+"\n"+Work+"\n"+ad.getWorkDeadline()+"\n"+ad.isTodayAHoliday()+"\n"+"\n");
+		System.out.print("Welcome to "+Name1+"\n"+hr.doActivity()+"\n"+Work1+"\n"+hr.getWorkDeadline()+"\n"+hr.isTodayAHoliday()+"\n"+"\n");
+		System.out.print("Welcome to "+Name2+"\n"+Work2+"\n"+td.getWorkDeadline()+"\n"+td.getTechStackInformation()+"\n"+td.isTodayAHoliday());
+	}
+}
