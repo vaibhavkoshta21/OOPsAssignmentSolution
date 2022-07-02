@@ -1,0 +1,5 @@
+package com.greatlearning.Model;
+
+public class AdminDepartment extends SuperDepartment {
+
+}
